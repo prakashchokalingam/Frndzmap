@@ -1,0 +1,134 @@
+ <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(document).ready(function(){
+$("#dev").click(function(){
+$("#h").show(1000);
+$("#main").hide();
+$("#bi").hide();
+});
+$("#bidu").click(function(){
+$("#bi").show(1000);
+$("#main").hide();
+$("#h").hide();
+});
+$("#xc").click(function(){
+$("#bi").show(1000);
+$("#h").hide();
+$("#main").hide();
+});
+$("#home").click(function(){
+$("#main").show(1000);
+$("#h").hide();
+$("#bi").hide();
+});
+$("#con").click(function(){
+$("#conu").show(1000);
+$("#h").hide();
+$("#bi").hide();
+$("#main").hide();
+});
+$("#sub").click(function(){
+var a=$('#email').val();
+var b=$('#msg').val();
+if(a=="" || b=="")
+{
+}
+else
+{
+var c="mailto:cpvicky33@gmail.com?subject=bid via fb  " + a +" &body=" + b;
+window.open(c,"_blank");
+}
+});
+});</script><style>
+
+body
+{
+background-image:url('images/bg.jpg');
+    background-repeat:repeat-x;
+	background-size:1000px 1500px;
+}
+button
+{
+height:50px;
+width:250px;
+border-radius:9px;
+background:#0066FF;
+background-image:url('images/bg.jpg');
+color:white;
+font-size:24px;
+margin:none;
+}
+div 
+{
+font-size:36px;
+color:#FFFFFF;
+}
+div #h
+{
+font-size:36px;
+float:left;
+color:#FFFFFF;
+}
+#b
+{
+font-size:60px;
+color:white;
+}
+.txt
+{
+height:50px;
+width:300px;
+border-radius:9px;
+background-image:url('images/bg.jpg');
+color:white;
+font-size:24px;
+}
+.txta
+{
+height:250px;
+width:300px;
+border-radius:9px;
+background-image:url('images/bg.jpg');
+color:white;
+font-size:24px;
+}
+</style>
+<body>
+<center><div><button id="home">Home</button>&nbsp;&nbsp;<button id="dev">Contact Developer</button>&nbsp;&nbsp;<button id="xc">Bid Us</button>&nbsp;&nbsp;</div></center>
+<br><br>
+<div id="conu" style="display:none;" align="center">
+</div>
+<div id="bi" style="display:none;" align="center">Bid Us in  your project <br>
+<table><tr><td><span id="b">Email <sup>* </sup></span></td><td> &nbsp;<input type="text" value="" id="email" class="txt" name="from"><input type="hidden" value="mail via fb bid"  name="subject"></td></tr>
+<tr><td><span id="b">Project<sup>* </sup><br> Details </span></td><td> &nbsp;<textarea value="" id="msg" class="txta" name="message"></textarea></td></tr>
+<tr><td></td><td><button id="sub" type="submit">Send</button></td></tr></table></div>
+<div id="h" align="center" style="display:none;"><br><span id="b">Prakash Chokalingam</span><br>
+(Founder and CEO of WebCored)<br><center><table style="font-size:36px;color:white" align="center"><tr><td>
+E-Mail : </td><td><a href="mailto:cpvicky33@gmail.com" target="_blank" style="color:orange; text-decoration:none">click to send mail (cpvicky33@gmail.com)</a></td></tr><tr>
+<td>Facebook : </td><td><a href="http://facebook.com/prakashchokalingam" target="_blank"  style="color:orange; text-decoration:none">wwww.facebook.com/prakashchokalingam</a></td></tr><tr>
+<td>Google : </td><td><a href="http://google.com/+prakashchokalingam"  target="_blank"  style="color:orange; text-decoration:none">Google.com/+prakashchokalingam</a></td></tr><tr>
+<td>LinkedIn: </td><td><a href="https://www.linkedin.com/profile/view?id=238196550"  target="_blank"  style="color:orange; text-decoration:none">www.linkedin.com/profile/</a></td></tr>
+<td>Twitter: </td><td><a href="https://twitter.com/PChokalingam"  target="_blank"  style="color:orange; text-decoration:none">www.twitter.com/PChokalingam</a></td></tr>
+<tr>
+<td>Git Hub: </td><td><a href="http://github.com/prakashchokalingam/"  target="_blank"  style="color:orange; text-decoration:none">www.github.com/prakashchokalingam/</a></td></tr>
+<tr>
+<td>Free Lancer: </td><td><!-- Place this tag where you want the button to render -->
+<a name="freelancer_Hireme" user_id="7802586" size="standard" annotation="inline" title="Hire me! on Freelancer.com" href="https://www.freelancer.com/users/7802586.html">PHP Developer</a>
+<script type="text/javascript">
+(function() {
+var po = document.createElement("script");
+po.type = "text/javascript";
+po.async = true;
+po.src = ("https:" == document.location.protocol ? "https" : "http") + "://www.freelancer.com/js/hireme/widget.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(po, s);
+})();
+</script></td></tr></table></center>
+</div>
+<center>
+
+<div id="main"><span id="b">W</span>eb Cored is a private organisation, Which enables in creation of web projects and Mobile applications.Web cored is a proffesionalic team which previously engaged with more web as well as mobile projects.We have efficent developers in our crew to make the work better and speed.Every one in our workspace are well experienced coders and designers.<a href="#" id="bidu">Click here to Bid us with your project</a>
+<p><span id="b" style="color:orange;">Area of Expertised :</span> Mostly we are almost ready to work with all web language platforms...but we are specifically experts in HTML5 , CSS3 , JAVASCRIPT, PHP , MYSQL , JQUERY , AJAX , XML , FLASH WEBSITES , JSP , ASP.NET and more... and <span id="b">M</span>obile applications using JAVA , C# , JAVASCRIPT , NODEJS and specialised in creating applications for ANDROID and IOS.</p>
+<p><span id="b" style="color:orange;">Upcoming projects : </span> Frndz map application for mobile , Creation of mobile and web application using CROSS PLATFORM , New facebook application , BigData analysis using Hadoop.</div>
+</center>
+</body>

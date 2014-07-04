@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="jq.js"></script>
+ <script src="ui.js"></script>
+ <link rel="stylesheet" href="core.css" />
+<script>
+$(document).ready(function() {
+  // this initializes the dialog (and uses some common options that I do)
+  $("#l").click(function(){
+  var url="x/like.html";
+$("#dialog").load( url, function(){
+    $(this).dialog({
+    height: 300,
+    width: 700,
+    modal: true,
+    resizable: false,
+	draggable: false,
+    position: ["center",20] 
+});
+ $("#clo").click(function(){
+$("#dialog").dialog("close");
+});
+});
+  });
+ 
+  });
+</script>
+
+</head>
+
+<body>
+<button id="l"></button>
+<div id="dialog" title="given"></div>
+</body>
+</html>
